@@ -1,0 +1,14 @@
+import pandas as pd
+from edmin.cleaning import clean_students, clean_grades
+from edmin.indicators import kpis_overview
+
+# Exemplo simples
+alunos = pd.read_csv("/content/drive/MyDrive/dados/alunos.csv")
+notas  = pd.read_csv("/content/drive/MyDrive/dados/notas.csv")
+
+alunos_c = clean_students(alunos)
+notas_c  = clean_grades(notas)
+
+base = pd.merge(alunos_c, notas_c, on="id_aluno")
+kpis = kpis_overview(base)
+print(kpis)
