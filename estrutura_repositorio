@@ -1,0 +1,10 @@
+ed-min/
+├─ data/             # Dados (pasta local ou Google Drive)
+├─ notebooks/        # Notebooks para rodar no Colab
+│   ├─ 01_quickstart.ipynb   # Tutorial inicial
+│   ├─ 02_indicadores.ipynb  # Geração de KPIs
+│   ├─ 03_modelagem.ipynb    # Modelagem de risco
+│   └─ 04_nlp_feedbacks.ipynb # NLP para feedback
+├─ edmin/            # Código Python do projeto
+├─ requirements.txt
+└─ README.md
